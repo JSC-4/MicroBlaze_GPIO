@@ -42,11 +42,9 @@ This is the stepping stone for developing more complexed SoC based systems.
 	Parity: None
 ```
 
-
-
 ## Additional Comments
 
-- The previous project to create a MicroBlaze processor with a UART core is foune [here](https://github.com/JSCBLOG/Microblaze_Hello_World)
+- The previous project to create a MicroBlaze processor with a UART core is found [here](https://github.com/JSCBLOG/Microblaze_Hello_World)
 - To change the buad rate, this can be done by clicking on the on the USB UART ip core in the block design.
 
 ## Issues and Bugs
