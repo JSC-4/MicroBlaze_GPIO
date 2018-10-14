@@ -1,4 +1,4 @@
-01:41:10 **** Build of configuration Debug for project GPIO ****
+10:38:07 **** Build of configuration Debug for project GPIO ****
 make all 
 Building file: ../src/helloworld.c
 Invoking: MicroBlaze gcc compiler
@@ -22,5 +22,5 @@ mb-size GPIO.elf  |tee "GPIO.elf.size"
 Finished building: GPIO.elf.size
  
 
-01:41:12 Build Finished (took 1s.310ms)
+10:38:09 Build Finished (took 1s.462ms)
 

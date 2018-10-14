@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
---Date        : Sun Oct 14 01:34:51 2018
+--Date        : Sun Oct 14 10:31:43 2018
 --Host        : DESKTOP-19INJQ0 running 64-bit major release  (build 9200)
 --Command     : generate_target uBlaze_wrapper.bd
 --Design      : uBlaze_wrapper
@@ -25,10 +25,10 @@ end uBlaze_wrapper;
 architecture STRUCTURE of uBlaze_wrapper is
   component uBlaze is
   port (
-    reset : in STD_LOGIC;
-    sys_clock : in STD_LOGIC;
     usb_uart_rxd : in STD_LOGIC;
     usb_uart_txd : out STD_LOGIC;
+    reset : in STD_LOGIC;
+    sys_clock : in STD_LOGIC;
     dip_switches_16bits_tri_i : in STD_LOGIC_VECTOR ( 15 downto 0 );
     led_16bits_tri_i : in STD_LOGIC_VECTOR ( 15 downto 0 );
     led_16bits_tri_o : out STD_LOGIC_VECTOR ( 15 downto 0 );

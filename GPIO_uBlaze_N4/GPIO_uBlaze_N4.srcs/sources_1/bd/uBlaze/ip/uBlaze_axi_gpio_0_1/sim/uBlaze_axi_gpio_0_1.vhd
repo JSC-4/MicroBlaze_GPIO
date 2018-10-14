@@ -56,7 +56,7 @@ USE ieee.numeric_std.ALL;
 LIBRARY axi_gpio_v2_0_19;
 USE axi_gpio_v2_0_19.axi_gpio;
 
-ENTITY uBlaze_axi_gpio_0_0 IS
+ENTITY uBlaze_axi_gpio_0_1 IS
   PORT (
     s_axi_aclk : IN STD_LOGIC;
     s_axi_aresetn : IN STD_LOGIC;
@@ -82,11 +82,11 @@ ENTITY uBlaze_axi_gpio_0_0 IS
     gpio2_io_o : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
     gpio2_io_t : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
   );
-END uBlaze_axi_gpio_0_0;
+END uBlaze_axi_gpio_0_1;
 
-ARCHITECTURE uBlaze_axi_gpio_0_0_arch OF uBlaze_axi_gpio_0_0 IS
+ARCHITECTURE uBlaze_axi_gpio_0_1_arch OF uBlaze_axi_gpio_0_1 IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
-  ATTRIBUTE DowngradeIPIdentifiedWarnings OF uBlaze_axi_gpio_0_0_arch: ARCHITECTURE IS "yes";
+  ATTRIBUTE DowngradeIPIdentifiedWarnings OF uBlaze_axi_gpio_0_1_arch: ARCHITECTURE IS "yes";
   COMPONENT axi_gpio IS
     GENERIC (
       C_FAMILY : STRING;
@@ -209,4 +209,4 @@ BEGIN
       gpio2_io_o => gpio2_io_o,
       gpio2_io_t => gpio2_io_t
     );
-END uBlaze_axi_gpio_0_0_arch;
+END uBlaze_axi_gpio_0_1_arch;

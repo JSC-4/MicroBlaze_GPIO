@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
--- Date        : Sun Oct 14 01:35:51 2018
+-- Date        : Sun Oct 14 01:35:50 2018
 -- Host        : DESKTOP-19INJQ0 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.srcs/sources_1/bd/uBlaze/ip/uBlaze_axi_gpio_0_0/uBlaze_axi_gpio_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top uBlaze_axi_gpio_0_1 -prefix
+--               uBlaze_axi_gpio_0_1_ uBlaze_axi_gpio_0_0_sim_netlist.vhdl
 -- Design      : uBlaze_axi_gpio_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -14,7 +14,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity uBlaze_axi_gpio_0_0_address_decoder is
+entity uBlaze_axi_gpio_0_1_address_decoder is
   port (
     \ip2bus_data_i_D1_reg[31]\ : out STD_LOGIC;
     \ip2bus_data_i_D1_reg[31]_0\ : out STD_LOGIC;
@@ -48,11 +48,9 @@ entity uBlaze_axi_gpio_0_0_address_decoder is
     reg4 : in STD_LOGIC_VECTOR ( 15 downto 0 );
     reg3 : in STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of uBlaze_axi_gpio_0_0_address_decoder : entity is "address_decoder";
-end uBlaze_axi_gpio_0_0_address_decoder;
+end uBlaze_axi_gpio_0_1_address_decoder;
 
-architecture STRUCTURE of uBlaze_axi_gpio_0_0_address_decoder is
+architecture STRUCTURE of uBlaze_axi_gpio_0_1_address_decoder is
   signal Bus_RNW_reg_i_1_n_0 : STD_LOGIC;
   signal \MEM_DECODE_GEN[0].cs_out_i[0]_i_1_n_0\ : STD_LOGIC;
   signal \^mem_decode_gen[0].cs_out_i_reg[0]_0\ : STD_LOGIC;
@@ -731,17 +729,15 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity uBlaze_axi_gpio_0_0_cdc_sync is
+entity uBlaze_axi_gpio_0_1_cdc_sync is
   port (
     scndry_vect_out : out STD_LOGIC_VECTOR ( 15 downto 0 );
     gpio_io_i : in STD_LOGIC_VECTOR ( 15 downto 0 );
     s_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of uBlaze_axi_gpio_0_0_cdc_sync : entity is "cdc_sync";
-end uBlaze_axi_gpio_0_0_cdc_sync;
+end uBlaze_axi_gpio_0_1_cdc_sync;
 
-architecture STRUCTURE of uBlaze_axi_gpio_0_0_cdc_sync is
+architecture STRUCTURE of uBlaze_axi_gpio_0_1_cdc_sync is
   signal s_level_out_bus_d1_cdc_to_0 : STD_LOGIC;
   signal s_level_out_bus_d1_cdc_to_1 : STD_LOGIC;
   signal s_level_out_bus_d1_cdc_to_10 : STD_LOGIC;
@@ -1695,17 +1691,17 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity uBlaze_axi_gpio_0_0_cdc_sync_0 is
+entity uBlaze_axi_gpio_0_1_cdc_sync_0 is
   port (
     scndry_vect_out : out STD_LOGIC_VECTOR ( 15 downto 0 );
     gpio2_io_i : in STD_LOGIC_VECTOR ( 15 downto 0 );
     s_axi_aclk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of uBlaze_axi_gpio_0_0_cdc_sync_0 : entity is "cdc_sync";
-end uBlaze_axi_gpio_0_0_cdc_sync_0;
+  attribute ORIG_REF_NAME of uBlaze_axi_gpio_0_1_cdc_sync_0 : entity is "cdc_sync";
+end uBlaze_axi_gpio_0_1_cdc_sync_0;
 
-architecture STRUCTURE of uBlaze_axi_gpio_0_0_cdc_sync_0 is
+architecture STRUCTURE of uBlaze_axi_gpio_0_1_cdc_sync_0 is
   signal s_level_out_bus_d1_cdc_to_0 : STD_LOGIC;
   signal s_level_out_bus_d1_cdc_to_1 : STD_LOGIC;
   signal s_level_out_bus_d1_cdc_to_10 : STD_LOGIC;
@@ -2659,7 +2655,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity uBlaze_axi_gpio_0_0_GPIO_Core is
+entity uBlaze_axi_gpio_0_1_GPIO_Core is
   port (
     reg1 : out STD_LOGIC_VECTOR ( 15 downto 0 );
     reg3 : out STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -2695,11 +2691,9 @@ entity uBlaze_axi_gpio_0_0_GPIO_Core is
     bus2ip_rnw_i_reg_1 : in STD_LOGIC_VECTOR ( 0 to 0 );
     bus2ip_rnw_i_reg_2 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of uBlaze_axi_gpio_0_0_GPIO_Core : entity is "GPIO_Core";
-end uBlaze_axi_gpio_0_0_GPIO_Core;
+end uBlaze_axi_gpio_0_1_GPIO_Core;
 
-architecture STRUCTURE of uBlaze_axi_gpio_0_0_GPIO_Core is
+architecture STRUCTURE of uBlaze_axi_gpio_0_1_GPIO_Core is
   signal \Dual.ALLOUT0_ND_G2.READ_REG2_GEN[0].reg3[16]_i_1_n_0\ : STD_LOGIC;
   signal \Dual.ALLOUT0_ND_G2.READ_REG2_GEN[0].reg4[16]_i_1_n_0\ : STD_LOGIC;
   signal \Dual.ALLOUT0_ND_G2.READ_REG2_GEN[10].reg3[26]_i_1_n_0\ : STD_LOGIC;
@@ -3550,7 +3544,7 @@ begin
       Q => \^reg4\(6),
       R => bus2ip_rnw_i_reg
     );
-\Dual.INPUT_DOUBLE_REGS4\: entity work.uBlaze_axi_gpio_0_0_cdc_sync
+\Dual.INPUT_DOUBLE_REGS4\: entity work.uBlaze_axi_gpio_0_1_cdc_sync
      port map (
       gpio_io_i(15 downto 0) => gpio_io_i(15 downto 0),
       s_axi_aclk => s_axi_aclk,
@@ -3571,7 +3565,7 @@ begin
       scndry_vect_out(1) => gpio_io_i_d2(14),
       scndry_vect_out(0) => gpio_io_i_d2(15)
     );
-\Dual.INPUT_DOUBLE_REGS5\: entity work.uBlaze_axi_gpio_0_0_cdc_sync_0
+\Dual.INPUT_DOUBLE_REGS5\: entity work.uBlaze_axi_gpio_0_1_cdc_sync_0
      port map (
       gpio2_io_i(15 downto 0) => gpio2_io_i(15 downto 0),
       s_axi_aclk => s_axi_aclk,
@@ -4613,7 +4607,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity uBlaze_axi_gpio_0_0_slave_attachment is
+entity uBlaze_axi_gpio_0_1_slave_attachment is
   port (
     SR : out STD_LOGIC_VECTOR ( 0 to 0 );
     \ip2bus_data_i_D1_reg[31]\ : out STD_LOGIC;
@@ -4658,11 +4652,9 @@ entity uBlaze_axi_gpio_0_0_slave_attachment is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of uBlaze_axi_gpio_0_0_slave_attachment : entity is "slave_attachment";
-end uBlaze_axi_gpio_0_0_slave_attachment;
+end uBlaze_axi_gpio_0_1_slave_attachment;
 
-architecture STRUCTURE of uBlaze_axi_gpio_0_0_slave_attachment is
+architecture STRUCTURE of uBlaze_axi_gpio_0_1_slave_attachment is
   signal \^dual.allout0_nd_g2.read_reg2_gen[0].reg4_reg[16]\ : STD_LOGIC;
   signal \FSM_onehot_state[0]_i_1_n_0\ : STD_LOGIC;
   signal \FSM_onehot_state[1]_i_1_n_0\ : STD_LOGIC;
@@ -5108,7 +5100,7 @@ begin
       Q => \INCLUDE_DPHASE_TIMER.dpto_cnt_reg__0\(3),
       R => clear
     );
-I_DECODER: entity work.uBlaze_axi_gpio_0_0_address_decoder
+I_DECODER: entity work.uBlaze_axi_gpio_0_1_address_decoder
      port map (
       D(16 downto 0) => D(16 downto 0),
       \Dual.ALLOUT0_ND_G2.READ_REG2_GEN[0].reg4_reg[16]\ => \Dual.ALLOUT0_ND_G2.READ_REG2_GEN[0].reg4_reg[16]_0\,
@@ -5595,7 +5587,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity uBlaze_axi_gpio_0_0_axi_lite_ipif is
+entity uBlaze_axi_gpio_0_1_axi_lite_ipif is
   port (
     bus2ip_reset : out STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[3].ce_out_i_reg\ : out STD_LOGIC;
@@ -5640,13 +5632,11 @@ entity uBlaze_axi_gpio_0_0_axi_lite_ipif is
     s_axi_araddr : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of uBlaze_axi_gpio_0_0_axi_lite_ipif : entity is "axi_lite_ipif";
-end uBlaze_axi_gpio_0_0_axi_lite_ipif;
+end uBlaze_axi_gpio_0_1_axi_lite_ipif;
 
-architecture STRUCTURE of uBlaze_axi_gpio_0_0_axi_lite_ipif is
+architecture STRUCTURE of uBlaze_axi_gpio_0_1_axi_lite_ipif is
 begin
-I_SLAVE_ATTACHMENT: entity work.uBlaze_axi_gpio_0_0_slave_attachment
+I_SLAVE_ATTACHMENT: entity work.uBlaze_axi_gpio_0_1_slave_attachment
      port map (
       D(16 downto 0) => D(16 downto 0),
       \Dual.ALLOUT0_ND_G2.READ_REG2_GEN[0].reg4_reg[16]\ => bus2ip_rnw,
@@ -5696,7 +5686,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity uBlaze_axi_gpio_0_0_axi_gpio is
+entity uBlaze_axi_gpio_0_1_axi_gpio is
   port (
     s_axi_aclk : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC;
@@ -5726,44 +5716,42 @@ entity uBlaze_axi_gpio_0_0_axi_gpio is
     gpio2_io_t : out STD_LOGIC_VECTOR ( 15 downto 0 )
   );
   attribute C_ALL_INPUTS : integer;
-  attribute C_ALL_INPUTS of uBlaze_axi_gpio_0_0_axi_gpio : entity is 1;
+  attribute C_ALL_INPUTS of uBlaze_axi_gpio_0_1_axi_gpio : entity is 1;
   attribute C_ALL_INPUTS_2 : integer;
-  attribute C_ALL_INPUTS_2 of uBlaze_axi_gpio_0_0_axi_gpio : entity is 0;
+  attribute C_ALL_INPUTS_2 of uBlaze_axi_gpio_0_1_axi_gpio : entity is 0;
   attribute C_ALL_OUTPUTS : integer;
-  attribute C_ALL_OUTPUTS of uBlaze_axi_gpio_0_0_axi_gpio : entity is 0;
+  attribute C_ALL_OUTPUTS of uBlaze_axi_gpio_0_1_axi_gpio : entity is 0;
   attribute C_ALL_OUTPUTS_2 : integer;
-  attribute C_ALL_OUTPUTS_2 of uBlaze_axi_gpio_0_0_axi_gpio : entity is 0;
+  attribute C_ALL_OUTPUTS_2 of uBlaze_axi_gpio_0_1_axi_gpio : entity is 0;
   attribute C_DOUT_DEFAULT : integer;
-  attribute C_DOUT_DEFAULT of uBlaze_axi_gpio_0_0_axi_gpio : entity is 0;
+  attribute C_DOUT_DEFAULT of uBlaze_axi_gpio_0_1_axi_gpio : entity is 0;
   attribute C_DOUT_DEFAULT_2 : integer;
-  attribute C_DOUT_DEFAULT_2 of uBlaze_axi_gpio_0_0_axi_gpio : entity is 0;
+  attribute C_DOUT_DEFAULT_2 of uBlaze_axi_gpio_0_1_axi_gpio : entity is 0;
   attribute C_FAMILY : string;
-  attribute C_FAMILY of uBlaze_axi_gpio_0_0_axi_gpio : entity is "artix7";
+  attribute C_FAMILY of uBlaze_axi_gpio_0_1_axi_gpio : entity is "artix7";
   attribute C_GPIO2_WIDTH : integer;
-  attribute C_GPIO2_WIDTH of uBlaze_axi_gpio_0_0_axi_gpio : entity is 16;
+  attribute C_GPIO2_WIDTH of uBlaze_axi_gpio_0_1_axi_gpio : entity is 16;
   attribute C_GPIO_WIDTH : integer;
-  attribute C_GPIO_WIDTH of uBlaze_axi_gpio_0_0_axi_gpio : entity is 16;
+  attribute C_GPIO_WIDTH of uBlaze_axi_gpio_0_1_axi_gpio : entity is 16;
   attribute C_INTERRUPT_PRESENT : integer;
-  attribute C_INTERRUPT_PRESENT of uBlaze_axi_gpio_0_0_axi_gpio : entity is 0;
+  attribute C_INTERRUPT_PRESENT of uBlaze_axi_gpio_0_1_axi_gpio : entity is 0;
   attribute C_IS_DUAL : integer;
-  attribute C_IS_DUAL of uBlaze_axi_gpio_0_0_axi_gpio : entity is 1;
+  attribute C_IS_DUAL of uBlaze_axi_gpio_0_1_axi_gpio : entity is 1;
   attribute C_S_AXI_ADDR_WIDTH : integer;
-  attribute C_S_AXI_ADDR_WIDTH of uBlaze_axi_gpio_0_0_axi_gpio : entity is 9;
+  attribute C_S_AXI_ADDR_WIDTH of uBlaze_axi_gpio_0_1_axi_gpio : entity is 9;
   attribute C_S_AXI_DATA_WIDTH : integer;
-  attribute C_S_AXI_DATA_WIDTH of uBlaze_axi_gpio_0_0_axi_gpio : entity is 32;
+  attribute C_S_AXI_DATA_WIDTH of uBlaze_axi_gpio_0_1_axi_gpio : entity is 32;
   attribute C_TRI_DEFAULT : integer;
-  attribute C_TRI_DEFAULT of uBlaze_axi_gpio_0_0_axi_gpio : entity is -1;
+  attribute C_TRI_DEFAULT of uBlaze_axi_gpio_0_1_axi_gpio : entity is -1;
   attribute C_TRI_DEFAULT_2 : integer;
-  attribute C_TRI_DEFAULT_2 of uBlaze_axi_gpio_0_0_axi_gpio : entity is -1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of uBlaze_axi_gpio_0_0_axi_gpio : entity is "axi_gpio";
+  attribute C_TRI_DEFAULT_2 of uBlaze_axi_gpio_0_1_axi_gpio : entity is -1;
   attribute downgradeipidentifiedwarnings : string;
-  attribute downgradeipidentifiedwarnings of uBlaze_axi_gpio_0_0_axi_gpio : entity is "yes";
+  attribute downgradeipidentifiedwarnings of uBlaze_axi_gpio_0_1_axi_gpio : entity is "yes";
   attribute ip_group : string;
-  attribute ip_group of uBlaze_axi_gpio_0_0_axi_gpio : entity is "LOGICORE";
-end uBlaze_axi_gpio_0_0_axi_gpio;
+  attribute ip_group of uBlaze_axi_gpio_0_1_axi_gpio : entity is "LOGICORE";
+end uBlaze_axi_gpio_0_1_axi_gpio;
 
-architecture STRUCTURE of uBlaze_axi_gpio_0_0_axi_gpio is
+architecture STRUCTURE of uBlaze_axi_gpio_0_1_axi_gpio is
   signal \<const0>\ : STD_LOGIC;
   signal AXI_LITE_IPIF_I_n_13 : STD_LOGIC;
   signal AXI_LITE_IPIF_I_n_14 : STD_LOGIC;
@@ -5830,7 +5818,7 @@ begin
   s_axi_rresp(1) <= \<const0>\;
   s_axi_rresp(0) <= \<const0>\;
   s_axi_wready <= \^s_axi_wready\;
-AXI_LITE_IPIF_I: entity work.uBlaze_axi_gpio_0_0_axi_lite_ipif
+AXI_LITE_IPIF_I: entity work.uBlaze_axi_gpio_0_1_axi_lite_ipif
      port map (
       Bus_RNW_reg => \I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg\,
       D(16) => \GPIO_DBus__0\(0),
@@ -5975,7 +5963,7 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-gpio_core_1: entity work.uBlaze_axi_gpio_0_0_GPIO_Core
+gpio_core_1: entity work.uBlaze_axi_gpio_0_1_GPIO_Core
      port map (
       Bus_RNW_reg => \I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg\,
       \Dual.ALLIN0_ND_G0.READ_REG_GEN[0].reg1_reg[16]_0\(15) => gpio_Data_In(0),
@@ -6229,7 +6217,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity uBlaze_axi_gpio_0_0 is
+entity uBlaze_axi_gpio_0_1 is
   port (
     s_axi_aclk : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC;
@@ -6256,16 +6244,16 @@ entity uBlaze_axi_gpio_0_0 is
     gpio2_io_t : out STD_LOGIC_VECTOR ( 15 downto 0 )
   );
   attribute NotValidForBitStream : boolean;
-  attribute NotValidForBitStream of uBlaze_axi_gpio_0_0 : entity is true;
+  attribute NotValidForBitStream of uBlaze_axi_gpio_0_1 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of uBlaze_axi_gpio_0_0 : entity is "uBlaze_axi_gpio_0_0,axi_gpio,{}";
+  attribute CHECK_LICENSE_TYPE of uBlaze_axi_gpio_0_1 : entity is "uBlaze_axi_gpio_0_0,axi_gpio,{}";
   attribute downgradeipidentifiedwarnings : string;
-  attribute downgradeipidentifiedwarnings of uBlaze_axi_gpio_0_0 : entity is "yes";
+  attribute downgradeipidentifiedwarnings of uBlaze_axi_gpio_0_1 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of uBlaze_axi_gpio_0_0 : entity is "axi_gpio,Vivado 2018.2.1";
-end uBlaze_axi_gpio_0_0;
+  attribute x_core_info of uBlaze_axi_gpio_0_1 : entity is "axi_gpio,Vivado 2018.2.1";
+end uBlaze_axi_gpio_0_1;
 
-architecture STRUCTURE of uBlaze_axi_gpio_0_0 is
+architecture STRUCTURE of uBlaze_axi_gpio_0_1 is
   signal NLW_U0_ip2intc_irpt_UNCONNECTED : STD_LOGIC;
   signal NLW_U0_gpio_io_o_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal NLW_U0_gpio_io_t_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -6333,7 +6321,7 @@ architecture STRUCTURE of uBlaze_axi_gpio_0_0 is
   attribute x_interface_info of s_axi_wdata : signal is "xilinx.com:interface:aximm:1.0 S_AXI WDATA";
   attribute x_interface_info of s_axi_wstrb : signal is "xilinx.com:interface:aximm:1.0 S_AXI WSTRB";
 begin
-U0: entity work.uBlaze_axi_gpio_0_0_axi_gpio
+U0: entity work.uBlaze_axi_gpio_0_1_axi_gpio
      port map (
       gpio2_io_i(15 downto 0) => gpio2_io_i(15 downto 0),
       gpio2_io_o(15 downto 0) => gpio2_io_o(15 downto 0),

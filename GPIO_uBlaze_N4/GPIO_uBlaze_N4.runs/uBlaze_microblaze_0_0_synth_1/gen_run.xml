@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="uBlaze_microblaze_0_0_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1539474448">
   <File Type="PA-TCL" Name="uBlaze_microblaze_0_0.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="uBlaze_microblaze_0_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="uBlaze_microblaze_0_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="uBlaze_microblaze_0_0.vds"/>
   <File Type="RDS-UTIL" Name="uBlaze_microblaze_0_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="uBlaze_microblaze_0_0_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="uBlaze_microblaze_0_0.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="uBlaze_microblaze_0_0_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="uBlaze_microblaze_0_0_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uBlaze_microblaze_0_0">
     <File Path="$PSRCDIR/sources_1/bd/uBlaze/ip/uBlaze_microblaze_0_0/uBlaze_microblaze_0_0.xci">
       <FileInfo>
@@ -36,9 +33,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

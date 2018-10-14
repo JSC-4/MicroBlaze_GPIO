@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
--- Date        : Sun Oct 14 01:35:51 2018
+-- Date        : Sun Oct 14 01:35:50 2018
 -- Host        : DESKTOP-19INJQ0 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.srcs/sources_1/bd/uBlaze/ip/uBlaze_axi_gpio_0_0/uBlaze_axi_gpio_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top uBlaze_axi_gpio_0_1 -prefix
+--               uBlaze_axi_gpio_0_1_ uBlaze_axi_gpio_0_0_stub.vhdl
 -- Design      : uBlaze_axi_gpio_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a100tcsg324-1
@@ -12,7 +12,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity uBlaze_axi_gpio_0_0 is
+entity uBlaze_axi_gpio_0_1 is
   Port ( 
     s_axi_aclk : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC;
@@ -39,9 +39,9 @@ entity uBlaze_axi_gpio_0_0 is
     gpio2_io_t : out STD_LOGIC_VECTOR ( 15 downto 0 )
   );
 
-end uBlaze_axi_gpio_0_0;
+end uBlaze_axi_gpio_0_1;
 
-architecture stub of uBlaze_axi_gpio_0_0 is
+architecture stub of uBlaze_axi_gpio_0_1 is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;

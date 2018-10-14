@@ -54,10 +54,10 @@ set_property used_in_implementation false [get_files -all c:/Users/Jerome/Deskto
 set_property used_in_implementation false [get_files -all c:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.srcs/sources_1/bd/uBlaze/ip/uBlaze_ilmb_v10_0/uBlaze_ilmb_v10_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.srcs/sources_1/bd/uBlaze/ip/uBlaze_ilmb_v10_0/uBlaze_ilmb_v10_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.srcs/sources_1/bd/uBlaze/ip/uBlaze_lmb_bram_0/uBlaze_lmb_bram_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.srcs/sources_1/bd/uBlaze/ip/uBlaze_axi_gpio_0_0/uBlaze_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.srcs/sources_1/bd/uBlaze/ip/uBlaze_axi_gpio_0_0/uBlaze_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.srcs/sources_1/bd/uBlaze/ip/uBlaze_axi_gpio_0_0/uBlaze_axi_gpio_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.srcs/sources_1/bd/uBlaze/ip/uBlaze_xbar_0/uBlaze_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.srcs/sources_1/bd/uBlaze/ip/uBlaze_axi_gpio_0_1/uBlaze_axi_gpio_0_1_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.srcs/sources_1/bd/uBlaze/ip/uBlaze_axi_gpio_0_1/uBlaze_axi_gpio_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.srcs/sources_1/bd/uBlaze/ip/uBlaze_axi_gpio_0_1/uBlaze_axi_gpio_0_1.xdc]
 set_property used_in_implementation false [get_files -all C:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.srcs/sources_1/bd/uBlaze/uBlaze_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being

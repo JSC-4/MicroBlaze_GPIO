@@ -56,7 +56,7 @@ USE ieee.numeric_std.ALL;
 LIBRARY axi_gpio_v2_0_19;
 USE axi_gpio_v2_0_19.axi_gpio;
 
-ENTITY uBlaze_axi_gpio_0_0 IS
+ENTITY uBlaze_axi_gpio_0_1 IS
   PORT (
     s_axi_aclk : IN STD_LOGIC;
     s_axi_aresetn : IN STD_LOGIC;
@@ -82,11 +82,11 @@ ENTITY uBlaze_axi_gpio_0_0 IS
     gpio2_io_o : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
     gpio2_io_t : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
   );
-END uBlaze_axi_gpio_0_0;
+END uBlaze_axi_gpio_0_1;
 
-ARCHITECTURE uBlaze_axi_gpio_0_0_arch OF uBlaze_axi_gpio_0_0 IS
+ARCHITECTURE uBlaze_axi_gpio_0_1_arch OF uBlaze_axi_gpio_0_1 IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
-  ATTRIBUTE DowngradeIPIdentifiedWarnings OF uBlaze_axi_gpio_0_0_arch: ARCHITECTURE IS "yes";
+  ATTRIBUTE DowngradeIPIdentifiedWarnings OF uBlaze_axi_gpio_0_1_arch: ARCHITECTURE IS "yes";
   COMPONENT axi_gpio IS
     GENERIC (
       C_FAMILY : STRING;
@@ -135,11 +135,11 @@ ARCHITECTURE uBlaze_axi_gpio_0_0_arch OF uBlaze_axi_gpio_0_0 IS
     );
   END COMPONENT axi_gpio;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF uBlaze_axi_gpio_0_0_arch: ARCHITECTURE IS "axi_gpio,Vivado 2018.2.1";
+  ATTRIBUTE X_CORE_INFO OF uBlaze_axi_gpio_0_1_arch: ARCHITECTURE IS "axi_gpio,Vivado 2018.2.1";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
-  ATTRIBUTE CHECK_LICENSE_TYPE OF uBlaze_axi_gpio_0_0_arch : ARCHITECTURE IS "uBlaze_axi_gpio_0_0,axi_gpio,{}";
+  ATTRIBUTE CHECK_LICENSE_TYPE OF uBlaze_axi_gpio_0_1_arch : ARCHITECTURE IS "uBlaze_axi_gpio_0_1,axi_gpio,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF uBlaze_axi_gpio_0_0_arch: ARCHITECTURE IS "uBlaze_axi_gpio_0_0,axi_gpio,{x_ipProduct=Vivado 2018.2.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_gpio,x_ipVersion=2.0,x_ipCoreRevision=19,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=artix7,C_S_AXI_ADDR_WIDTH=9,C_S_AXI_DATA_WIDTH=32,C_GPIO_WIDTH=16,C_GPIO2_WIDTH=16,C_ALL_INPUTS=1,C_ALL_INPUTS_2=0,C_ALL_OUTPUTS=0,C_ALL_OUTPUTS_2=0,C_INTERRUPT_PRESENT=0,C_DOUT_DEFAULT=0x00000000,C_TRI_DEFAULT=0xFFFFFFFF,C_IS_DUAL=1,C_DOUT_DEFAULT_2=0x00000000,C_TRI_DEFAULT_2=0xFFFFFFFF}";
+  ATTRIBUTE CORE_GENERATION_INFO OF uBlaze_axi_gpio_0_1_arch: ARCHITECTURE IS "uBlaze_axi_gpio_0_1,axi_gpio,{x_ipProduct=Vivado 2018.2.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=axi_gpio,x_ipVersion=2.0,x_ipCoreRevision=19,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_FAMILY=artix7,C_S_AXI_ADDR_WIDTH=9,C_S_AXI_DATA_WIDTH=32,C_GPIO_WIDTH=16,C_GPIO2_WIDTH=16,C_ALL_INPUTS=1,C_ALL_INPUTS_2=0,C_ALL_OUTPUTS=0,C_ALL_OUTPUTS_2=0,C_INTERRUPT_PRESENT=0,C_DOUT_DEFAULT=0x00000000,C_TRI_DEFAULT=0xFFFFFFFF,C_IS_DUAL=1,C_DOUT_DEFAULT_2=0x00000000,C_TRI_DEFAULT_2=0xFFFFFFFF}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_INFO OF gpio2_io_t: SIGNAL IS "xilinx.com:interface:gpio:1.0 GPIO2 TRI_T";
@@ -215,4 +215,4 @@ BEGIN
       gpio2_io_o => gpio2_io_o,
       gpio2_io_t => gpio2_io_t
     );
-END uBlaze_axi_gpio_0_0_arch;
+END uBlaze_axi_gpio_0_1_arch;

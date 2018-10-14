@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date                      : Sun Oct 14 01:38:40 2018
+| Date                      : Sun Oct 14 10:33:38 2018
 | Host                      : DESKTOP-19INJQ0 running 64-bit major release  (build 9200)
 | Command                   : report_io -file uBlaze_wrapper_io_placed.rpt
 | Design                    : uBlaze_wrapper

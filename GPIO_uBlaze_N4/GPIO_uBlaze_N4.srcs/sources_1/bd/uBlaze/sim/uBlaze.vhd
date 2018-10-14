@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
---Date        : Sun Oct 14 01:34:51 2018
+--Date        : Sun Oct 14 10:31:43 2018
 --Host        : DESKTOP-19INJQ0 running 64-bit major release  (build 9200)
 --Command     : generate_target uBlaze.bd
 --Design      : uBlaze
@@ -1375,7 +1375,7 @@ entity uBlaze is
     usb_uart_txd : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of uBlaze : entity is "uBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=uBlaze,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=17,numReposBlks=12,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of uBlaze : entity is "uBlaze,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=uBlaze,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=17,numReposBlks=12,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_board_cnt=2,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of uBlaze : entity is "uBlaze.hwdef";
 end uBlaze;
@@ -1499,7 +1499,7 @@ architecture STRUCTURE of uBlaze is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component uBlaze_rst_clk_wiz_0_100M_0;
-  component uBlaze_axi_gpio_0_0 is
+  component uBlaze_axi_gpio_0_1 is
   port (
     s_axi_aclk : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC;
@@ -1525,7 +1525,7 @@ architecture STRUCTURE of uBlaze is
     gpio2_io_o : out STD_LOGIC_VECTOR ( 15 downto 0 );
     gpio2_io_t : out STD_LOGIC_VECTOR ( 15 downto 0 )
   );
-  end component uBlaze_axi_gpio_0_0;
+  end component uBlaze_axi_gpio_0_1;
   signal axi_gpio_0_GPIO2_TRI_I : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal axi_gpio_0_GPIO2_TRI_O : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal axi_gpio_0_GPIO2_TRI_T : STD_LOGIC_VECTOR ( 15 downto 0 );
@@ -1650,7 +1650,7 @@ begin
   reset_1 <= reset;
   sys_clock_1 <= sys_clock;
   usb_uart_txd <= axi_uartlite_0_UART_TxD;
-axi_gpio_0: component uBlaze_axi_gpio_0_0
+axi_gpio_0: component uBlaze_axi_gpio_0_1
      port map (
       gpio2_io_i(15 downto 0) => axi_gpio_0_GPIO2_TRI_I(15 downto 0),
       gpio2_io_o(15 downto 0) => axi_gpio_0_GPIO2_TRI_O(15 downto 0),

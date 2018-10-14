@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1539477299">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1539509508">
   <File Type="PA-TCL" Name="uBlaze_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="uBlaze_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="uBlaze_wrapper_reports.tcl"/>
@@ -37,9 +37,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="uBlaze_mdm_1_0"/>
@@ -51,6 +49,5 @@
   <BlockFileSet Type="BlockSrcs" Name="uBlaze_ilmb_v10_0"/>
   <BlockFileSet Type="BlockSrcs" Name="uBlaze_dlmb_bram_if_cntlr_0"/>
   <BlockFileSet Type="BlockSrcs" Name="uBlaze_lmb_bram_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="uBlaze_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="uBlaze_xbar_0"/>
 </GenRun>

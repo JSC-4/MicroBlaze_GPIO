@@ -1,4 +1,4 @@
-01:41:02 **** Build of project GPIO_bsp ****
+10:38:00 **** Build of project GPIO_bsp ****
 make -k all 
 "Running Make include in microblaze_0/libsrc/bram_v4_2/src"
 C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -31,5 +31,5 @@ C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/uartlite_v3_2/src -s
 "Compiling uartlite"
 'Finished building libraries'
 
-01:41:10 Build Finished (took 8s.272ms)
+10:38:07 Build Finished (took 7s.643ms)
 

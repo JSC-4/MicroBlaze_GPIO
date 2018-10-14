@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1539477301">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1539509510">
   <File Type="BITSTR-BMM" Name="uBlaze_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="uBlaze_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="uBlaze_wrapper_timing_summary_init.rpt"/>
@@ -97,9 +97,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -119,6 +117,5 @@
   <BlockFileSet Type="BlockSrcs" Name="uBlaze_ilmb_v10_0"/>
   <BlockFileSet Type="BlockSrcs" Name="uBlaze_dlmb_bram_if_cntlr_0"/>
   <BlockFileSet Type="BlockSrcs" Name="uBlaze_lmb_bram_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="uBlaze_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="uBlaze_xbar_0"/>
 </GenRun>
