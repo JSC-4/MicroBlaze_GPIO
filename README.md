@@ -15,7 +15,7 @@ This is the stepping stone for developing more complexed SoC based systems.
 ```
 1. Create a new project. As no RTL sources are not used "Do not specify sources at this time" can be checked.
    Select the FPGA board used and finish building the project.
-2. From the [pervious project](https://github.com/JSCBLOG/Microblaze_Hello_World) a tcl sciprt of the MicroBlaze processor block design can be created in a
+2. From the previous project a tcl sciprt of the MicroBlaze processor block design can be created in an
    executable file. This is done by going file->export->export block design. Save this file, open it in a text
    editing software, copy it's contents and paste it in the new projects tcl command line. This will regenerate
    the previous project.
@@ -46,8 +46,8 @@ This is the stepping stone for developing more complexed SoC based systems.
 
 ## Additional Comments
 
+- The previous project to create a MicroBlaze processor with a UART core is foune [here](https://github.com/JSCBLOG/Microblaze_Hello_World)
 - To change the buad rate, this can be done by clicking on the on the USB UART ip core in the block design.
-- Can also add the MicroBlaze IP first and then the clocking wizard. After generate all the needed cores from running the block automation. The reset will need to be changed to active low in the clocking wizard. Possible error when generating the bitstream, which can be fixed by deleting the clocking wizard and adding it again.
 
 ## Issues and Bugs
 
