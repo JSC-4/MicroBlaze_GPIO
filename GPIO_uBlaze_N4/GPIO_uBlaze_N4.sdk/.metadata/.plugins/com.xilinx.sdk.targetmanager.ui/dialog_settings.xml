@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="bootloop" key="uBlaze_wrapper_hw_platform_0-microblaze_0-initElf"/>
+	<item value="Local" key="uBlaze_wrapper_hw_platform_0-target"/>
+	<item value="uBlaze_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="Auto Detect" key="uBlaze_wrapper_hw_platform_0-device"/>
+	<item value="uBlaze_wrapper.mmi" key="uBlaze_wrapper_hw_platform_0-bmmFile"/>
+	<item value="false" key="uBlaze_wrapper_hw_platform_0-partial_bit"/>
+	<item value="uBlaze_wrapper.bit" key="uBlaze_wrapper_hw_platform_0-bitFile"/>
+</section>
