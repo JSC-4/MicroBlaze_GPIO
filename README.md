@@ -1,6 +1,7 @@
 # MicroBlaze with Nexys-4 DDR
 
-This project is about using the Nexys-4 DDR, to create a MicroBlaze SoC and communicating with the UART to print "Hello World". This is the stepping stone for developing more complexed SoC based systems.
+This project is about using the Nexys-4 DDR, to create a MicroBlaze SoC and communicating with the UART to print "Hello World". 
+This is the stepping stone for developing more complexed SoC based systems.
 
 ### Prerequisites
 
@@ -14,12 +15,12 @@ This project is about using the Nexys-4 DDR, to create a MicroBlaze SoC and comm
 ```
 1. Create a new project. As no RTL sources are not used "Do not specify sources at this time" can be checked.
    Select the FPGA board used and finish building the project.
-2. Create a new block design. Add System Clock from Board tab, then Reset to the block design. Make sure to have 
-   RESET TO ACTIVE LOW on reset pin AND clocking wizard. Add Microblaze IP and run block automation with default 
-   settings. Add USB UART and run block automation. Lastly click validate design.
-3. Go the the sources tab and right click the block design file under Design Sources and click create HDL wrapper,
-   letting Vivado manage wrapper and auto-update. Click generate bitstream, which will also do synthesis and 
-   implementation.
+2. From the previous project a tcl sciprt of the MicroBlaze processor block design can be created in an
+   executable file. This is done by going file->export->export block design. Save this file, open it in a text
+   editing software, copy it's contents and paste it in the new projects tcl command line. This will regenerate
+   the previous project.
+3. Add an AXI GPIO core, double click on the ip block, add dip switches in GPIO and LEDs in GPIO2. Validate the
+   design, create a HDL wrapper (if not already created) and generate bitstream.
 4. Once bitstream is generated, go to file->export->export hardware and make sure INCLUDE BITSTREAM is checked.
 5. File->Launch SDK
 ```
@@ -41,12 +42,10 @@ This project is about using the Nexys-4 DDR, to create a MicroBlaze SoC and comm
 	Parity: None
 ```
 
-
-
 ## Additional Comments
 
+- The previous project to create a MicroBlaze processor with a UART core is found [here](https://github.com/JSCBLOG/Microblaze_Hello_World)
 - To change the buad rate, this can be done by clicking on the on the USB UART ip core in the block design.
-- Can also add the MicroBlaze IP first and then the clocking wizard. After generate all the needed cores from running the block automation. The reset will need to be changed to active low in the clocking wizard. Possible error when generating the bitstream, which can be fixed by deleting the clocking wizard and adding it again.
 
 ## Issues and Bugs
 
