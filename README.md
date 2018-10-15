@@ -18,9 +18,10 @@ This is the stepping stone for developing more complexed SoC based systems.
 2. From the previous project a tcl sciprt of the MicroBlaze processor block design can be created in an
    executable file. This is done by going file->export->export block design. Save this file, open it in a text
    editing software, copy it's contents and paste it in the new projects tcl command line. This will regenerate
-   the previous project.
-3. Add an AXI GPIO core, double click on the ip block, add dip switches in GPIO and LEDs in GPIO2. Validate the
-   design, create a HDL wrapper (if not already created) and generate bitstream.
+   the previous project. 
+3. Add an AXI GPIO core, double click on the ip block, add dip switches in GPIO. Do the same for another AXI 
+   GPIO core but add LEDs to GPIO. Run connection automation, validate the design, create a HDL wrapper 
+   (if not already created) and generate bitstream.
 4. Once bitstream is generated, go to file->export->export hardware and make sure INCLUDE BITSTREAM is checked.
 5. File->Launch SDK
 ```
@@ -31,9 +32,12 @@ This is the stepping stone for developing more complexed SoC based systems.
 1. When launched in SDK from Vivado, make sure the hw wrapper folder can be seen in the projext explorer window.
 2. File->new->application project. Name the project and ensure the target harware is the same as the hw wrapper.
    In the next window pick Hello World template and finish.
-3. Go to the helloworld.c file from the application project folder, in the src folder. To show the "Hello World" 
-   print multiple times, it can be put in an infinite for or while loop.
-4. Click program FPGA, then after right click the application project folder then run as->launch on hardware (GDB).
+3. Go to the helloworld.c (can change the name to something more appropriate) file from the application project 
+   folder, in the src folder. To read GPIO three steps need to be done. 1) Initialise the GPIO, 2) Set data direction,
+   3) Read data. Various online documents can describe this in detail, such as Xilinx's Writing Basic Software
+   Application.
+4. Once this is done click program FPGA, then after right click the application project folder then run as->launch on 
+   hardware (GDB). If using the UART terminal see this step the below.
 5. Set up a serial terminal with the settings:
 	COM Port: Check device manager
 	Board Rate: 9600
