@@ -1,0 +1,426 @@
+15:55:11 **** Build of project GPIO_Interface_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+15:55:18 **** Build of configuration Debug for project GPIO_Interface ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../GPIO_Interface_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../GPIO_Interface_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: GPIO_Interface.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_Interface_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO_Interface.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO_Interface.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO_Interface.elf  |tee "GPIO_Interface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2712	    268	   3108	   6088	   17c8	GPIO_Interface.elf
+Finished building: GPIO_Interface.elf.size
+ 
+15:57:14 **** Clean-only build of configuration Debug for project GPIO_Interface ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  GPIO_Interface.elf.size  GPIO_Interface.elf
+ 
+15:57:15 **** Auto Build of configuration Debug for project GPIO_Interface ****
+make all 
+Building file: ../src/GPIO_Test.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_Test.o" -I../../GPIO_Interface_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/GPIO_Test.d" -MT"src/GPIO_Test.o" -o "src/GPIO_Test.o" "../src/GPIO_Test.c"
+Finished building: ../src/GPIO_Test.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../GPIO_Interface_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: GPIO_Interface.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_Interface_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO_Interface.elf"  ./src/GPIO_Test.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO_Interface.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO_Interface.elf  |tee "GPIO_Interface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2712	    268	   3108	   6088	   17c8	GPIO_Interface.elf
+Finished building: GPIO_Interface.elf.size
+ 
+15:57:36 **** Auto Build of configuration Debug for project GPIO_Interface ****
+make all 
+Building file: ../src/GPIO_Test.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_Test.o" -I../../GPIO_Interface_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/GPIO_Test.d" -MT"src/GPIO_Test.o" -o "src/GPIO_Test.o" "../src/GPIO_Test.c"
+Finished building: ../src/GPIO_Test.c
+ 
+Building target: GPIO_Interface.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_Interface_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO_Interface.elf"  ./src/GPIO_Test.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO_Interface.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO_Interface.elf  |tee "GPIO_Interface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2712	    268	   3108	   6088	   17c8	GPIO_Interface.elf
+Finished building: GPIO_Interface.elf.size
+ 
+15:57:40 **** Auto Build of configuration Debug for project GPIO_Interface ****
+make all 
+Building file: ../src/GPIO_Test.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_Test.o" -I../../GPIO_Interface_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/GPIO_Test.d" -MT"src/GPIO_Test.o" -o "src/GPIO_Test.o" "../src/GPIO_Test.c"
+Finished building: ../src/GPIO_Test.c
+ 
+Building target: GPIO_Interface.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_Interface_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO_Interface.elf"  ./src/GPIO_Test.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO_Interface.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO_Interface.elf  |tee "GPIO_Interface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2712	    268	   3108	   6088	   17c8	GPIO_Interface.elf
+Finished building: GPIO_Interface.elf.size
+ 
+15:58:11 **** Auto Build of configuration Debug for project GPIO_Interface ****
+make all 
+Building file: ../src/GPIO_Test.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_Test.o" -I../../GPIO_Interface_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/GPIO_Test.d" -MT"src/GPIO_Test.o" -o "src/GPIO_Test.o" "../src/GPIO_Test.c"
+Finished building: ../src/GPIO_Test.c
+ 
+Building target: GPIO_Interface.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_Interface_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO_Interface.elf"  ./src/GPIO_Test.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO_Interface.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO_Interface.elf  |tee "GPIO_Interface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2712	    268	   3108	   6088	   17c8	GPIO_Interface.elf
+Finished building: GPIO_Interface.elf.size
+ 
+15:58:25 **** Auto Build of configuration Debug for project GPIO_Interface ****
+make all 
+Building file: ../src/GPIO_Test.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_Test.o" -I../../GPIO_Interface_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/GPIO_Test.d" -MT"src/GPIO_Test.o" -o "src/GPIO_Test.o" "../src/GPIO_Test.c"
+Finished building: ../src/GPIO_Test.c
+ 
+Building target: GPIO_Interface.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_Interface_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO_Interface.elf"  ./src/GPIO_Test.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO_Interface.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO_Interface.elf  |tee "GPIO_Interface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2712	    268	   3108	   6088	   17c8	GPIO_Interface.elf
+Finished building: GPIO_Interface.elf.size
+ 
+15:58:49 **** Auto Build of configuration Debug for project GPIO_Interface ****
+make all 
+Building file: ../src/GPIO_Test.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_Test.o" -I../../GPIO_Interface_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/GPIO_Test.d" -MT"src/GPIO_Test.o" -o "src/GPIO_Test.o" "../src/GPIO_Test.c"
+../src/GPIO_Test.c: In function 'main':
+../src/GPIO_Test.c:15:15: warning: unused variable 'output' [-Wunused-variable]
+  XGpio input, output;
+               ^~~~~~
+../src/GPIO_Test.c:15:8: warning: unused variable 'input' [-Wunused-variable]
+  XGpio input, output;
+        ^~~~~
+Finished building: ../src/GPIO_Test.c
+ 
+Building target: GPIO_Interface.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_Interface_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO_Interface.elf"  ./src/GPIO_Test.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO_Interface.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO_Interface.elf  |tee "GPIO_Interface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2712	    268	   3108	   6088	   17c8	GPIO_Interface.elf
+Finished building: GPIO_Interface.elf.size
+ 
+16:02:08 **** Auto Build of configuration Debug for project GPIO_Interface ****
+make all 
+Building file: ../src/GPIO_Test.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_Test.o" -I../../GPIO_Interface_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/GPIO_Test.d" -MT"src/GPIO_Test.o" -o "src/GPIO_Test.o" "../src/GPIO_Test.c"
+../src/GPIO_Test.c: In function 'main':
+../src/GPIO_Test.c:18:19: error: incompatible type for argument 1 of 'XGpio_Initialize'
+  XGpio_Initialize(input,XPAR_AXI_GPIO_0_DEVICE_ID);
+                   ^~~~~
+In file included from ../src/GPIO_Test.c:10:0:
+../../GPIO_Interface_bsp/microblaze_0/include/xgpio.h:172:5: note: expected 'XGpio * {aka struct <anonymous> *}' but argument is of type 'XGpio {aka struct <anonymous>}'
+ int XGpio_Initialize(XGpio *InstancePtr, u16 DeviceId);
+     ^~~~~~~~~~~~~~~~
+../src/GPIO_Test.c:16:6: warning: unused variable 'switch_data' [-Wunused-variable]
+  int switch_data;
+      ^~~~~~~~~~~
+make: *** [src/GPIO_Test.o] Error 1
+16:03:10 **** Auto Build of configuration Debug for project GPIO_Interface ****
+make all 
+Building file: ../src/GPIO_Test.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_Test.o" -I../../GPIO_Interface_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/GPIO_Test.d" -MT"src/GPIO_Test.o" -o "src/GPIO_Test.o" "../src/GPIO_Test.c"
+../src/GPIO_Test.c: In function 'main':
+../src/GPIO_Test.c:16:6: warning: unused variable 'switch_data' [-Wunused-variable]
+  int switch_data;
+      ^~~~~~~~~~~
+Finished building: ../src/GPIO_Test.c
+ 
+Building target: GPIO_Interface.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_Interface_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO_Interface.elf"  ./src/GPIO_Test.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO_Interface.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO_Interface.elf  |tee "GPIO_Interface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3180	    304	   3116	   6600	   19c8	GPIO_Interface.elf
+Finished building: GPIO_Interface.elf.size
+ 
+16:04:24 **** Auto Build of configuration Debug for project GPIO_Interface ****
+make all 
+Building file: ../src/GPIO_Test.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_Test.o" -I../../GPIO_Interface_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/GPIO_Test.d" -MT"src/GPIO_Test.o" -o "src/GPIO_Test.o" "../src/GPIO_Test.c"
+../src/GPIO_Test.c: In function 'main':
+../src/GPIO_Test.c:22:2: error: unknown type name 'X'; did you mean '_X'?
+  X
+  ^
+  _X
+../src/GPIO_Test.c:23:5: error: conflicting types for 'init_platform'
+     init_platform();
+     ^~~~~~~~~~~~~
+In file included from ../src/GPIO_Test.c:8:0:
+../src/platform.h:38:6: note: previous declaration of 'init_platform' was here
+ void init_platform();
+      ^~~~~~~~~~~~~
+../src/GPIO_Test.c:16:6: warning: unused variable 'switch_data' [-Wunused-variable]
+  int switch_data;
+      ^~~~~~~~~~~
+make: *** [src/GPIO_Test.o] Error 1
+16:04:44 **** Auto Build of configuration Debug for project GPIO_Interface ****
+make all 
+Building file: ../src/GPIO_Test.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_Test.o" -I../../GPIO_Interface_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/GPIO_Test.d" -MT"src/GPIO_Test.o" -o "src/GPIO_Test.o" "../src/GPIO_Test.c"
+../src/GPIO_Test.c: In function 'main':
+../src/GPIO_Test.c:24:5: error: expected ';' before 'init_platform'
+     init_platform();
+     ^~~~~~~~~~~~~
+../src/GPIO_Test.c:16:6: warning: unused variable 'switch_data' [-Wunused-variable]
+  int switch_data;
+      ^~~~~~~~~~~
+make: *** [src/GPIO_Test.o] Error 1
+16:04:46 **** Auto Build of configuration Debug for project GPIO_Interface ****
+make all 
+Building file: ../src/GPIO_Test.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_Test.o" -I../../GPIO_Interface_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/GPIO_Test.d" -MT"src/GPIO_Test.o" -o "src/GPIO_Test.o" "../src/GPIO_Test.c"
+../src/GPIO_Test.c: In function 'main':
+../src/GPIO_Test.c:16:6: warning: unused variable 'switch_data' [-Wunused-variable]
+  int switch_data;
+      ^~~~~~~~~~~
+Finished building: ../src/GPIO_Test.c
+ 
+Building target: GPIO_Interface.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_Interface_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO_Interface.elf"  ./src/GPIO_Test.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO_Interface.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO_Interface.elf  |tee "GPIO_Interface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3480	    304	   3112	   6896	   1af0	GPIO_Interface.elf
+Finished building: GPIO_Interface.elf.size
+ 
+16:05:01 **** Auto Build of configuration Debug for project GPIO_Interface ****
+make all 
+Building file: ../src/GPIO_Test.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_Test.o" -I../../GPIO_Interface_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/GPIO_Test.d" -MT"src/GPIO_Test.o" -o "src/GPIO_Test.o" "../src/GPIO_Test.c"
+../src/GPIO_Test.c: In function 'main':
+../src/GPIO_Test.c:16:6: warning: unused variable 'switch_data' [-Wunused-variable]
+  int switch_data;
+      ^~~~~~~~~~~
+Finished building: ../src/GPIO_Test.c
+ 
+Building target: GPIO_Interface.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_Interface_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO_Interface.elf"  ./src/GPIO_Test.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO_Interface.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO_Interface.elf  |tee "GPIO_Interface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2928	    304	   3112	   6344	   18c8	GPIO_Interface.elf
+Finished building: GPIO_Interface.elf.size
+ 
+16:06:35 **** Auto Build of configuration Debug for project GPIO_Interface ****
+make all 
+Building file: ../src/GPIO_Test.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_Test.o" -I../../GPIO_Interface_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/GPIO_Test.d" -MT"src/GPIO_Test.o" -o "src/GPIO_Test.o" "../src/GPIO_Test.c"
+../src/GPIO_Test.c: In function 'main':
+../src/GPIO_Test.c:16:6: warning: variable 'switch_data' set but not used [-Wunused-but-set-variable]
+  int switch_data;
+      ^~~~~~~~~~~
+Finished building: ../src/GPIO_Test.c
+ 
+Building target: GPIO_Interface.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_Interface_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO_Interface.elf"  ./src/GPIO_Test.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO_Interface.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO_Interface.elf  |tee "GPIO_Interface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3228	    304	   3116	   6648	   19f8	GPIO_Interface.elf
+Finished building: GPIO_Interface.elf.size
+ 
+16:07:05 **** Auto Build of configuration Debug for project GPIO_Interface ****
+make all 
+Building file: ../src/GPIO_Test.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_Test.o" -I../../GPIO_Interface_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/GPIO_Test.d" -MT"src/GPIO_Test.o" -o "src/GPIO_Test.o" "../src/GPIO_Test.c"
+Finished building: ../src/GPIO_Test.c
+ 
+Building target: GPIO_Interface.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_Interface_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO_Interface.elf"  ./src/GPIO_Test.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO_Interface.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO_Interface.elf  |tee "GPIO_Interface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3496	    304	   3112	   6912	   1b00	GPIO_Interface.elf
+Finished building: GPIO_Interface.elf.size
+ 
+16:07:59 **** Incremental Build of configuration Debug for project GPIO_Interface ****
+make all 
+make: Nothing to be done for `all'.
+16:08:46 **** Auto Build of configuration Debug for project GPIO_Interface ****
+make all 
+Building file: ../src/GPIO_Test.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_Test.o" -I../../GPIO_Interface_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/GPIO_Test.d" -MT"src/GPIO_Test.o" -o "src/GPIO_Test.o" "../src/GPIO_Test.c"
+Finished building: ../src/GPIO_Test.c
+ 
+Building target: GPIO_Interface.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_Interface_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO_Interface.elf"  ./src/GPIO_Test.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO_Interface.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO_Interface.elf  |tee "GPIO_Interface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3496	    304	   3112	   6912	   1b00	GPIO_Interface.elf
+Finished building: GPIO_Interface.elf.size
+ 
+16:08:51 **** Incremental Build of configuration Debug for project GPIO_Interface ****
+make all 
+make: Nothing to be done for `all'.
+16:09:23 **** Auto Build of configuration Debug for project GPIO_Interface ****
+make all 
+Building file: ../src/GPIO_Test.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_Test.o" -I../../GPIO_Interface_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/GPIO_Test.d" -MT"src/GPIO_Test.o" -o "src/GPIO_Test.o" "../src/GPIO_Test.c"
+Finished building: ../src/GPIO_Test.c
+ 
+Building target: GPIO_Interface.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_Interface_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO_Interface.elf"  ./src/GPIO_Test.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO_Interface.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO_Interface.elf  |tee "GPIO_Interface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3500	    304	   3116	   6920	   1b08	GPIO_Interface.elf
+Finished building: GPIO_Interface.elf.size
+ 
+16:12:03 **** Auto Build of configuration Debug for project GPIO_Interface ****
+make all 
+Building file: ../src/GPIO_Test.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_Test.o" -I../../GPIO_Interface_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/GPIO_Test.d" -MT"src/GPIO_Test.o" -o "src/GPIO_Test.o" "../src/GPIO_Test.c"
+../src/GPIO_Test.c: In function 'main':
+../src/GPIO_Test.c:29:27: error: 'count' undeclared (first use in this function); did you mean 'counter'?
+      for(int counter = 0; count <= MAXCOUNT; counter++)
+                           ^~~~~
+                           counter
+../src/GPIO_Test.c:29:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/GPIO_Test.c:31:11: error: expected expression before ')' token
+       if ()
+           ^
+make: *** [src/GPIO_Test.o] Error 1
+16:12:36 **** Auto Build of configuration Debug for project GPIO_Interface ****
+make all 
+Building file: ../src/GPIO_Test.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_Test.o" -I../../GPIO_Interface_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/GPIO_Test.d" -MT"src/GPIO_Test.o" -o "src/GPIO_Test.o" "../src/GPIO_Test.c"
+../src/GPIO_Test.c: In function 'main':
+../src/GPIO_Test.c:29:27: error: 'count' undeclared (first use in this function); did you mean 'counter'?
+      for(int counter = 0; count <= MAXCOUNT; counter++)
+                           ^~~~~
+                           counter
+../src/GPIO_Test.c:29:27: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/GPIO_Test.o] Error 1
+16:13:38 **** Auto Build of configuration Debug for project GPIO_Interface ****
+make all 
+Building file: ../src/GPIO_Test.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/GPIO_Test.o" -I../../GPIO_Interface_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/GPIO_Test.d" -MT"src/GPIO_Test.o" -o "src/GPIO_Test.o" "../src/GPIO_Test.c"
+Finished building: ../src/GPIO_Test.c
+ 
+Building target: GPIO_Interface.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_Interface_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO_Interface.elf"  ./src/GPIO_Test.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO_Interface.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO_Interface.elf  |tee "GPIO_Interface.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3500	    304	   3116	   6920	   1b08	GPIO_Interface.elf
+Finished building: GPIO_Interface.elf.size
+ 
+16:13:45 **** Incremental Build of configuration Debug for project GPIO_Interface ****
+make all 
+make: Nothing to be done for `all'.

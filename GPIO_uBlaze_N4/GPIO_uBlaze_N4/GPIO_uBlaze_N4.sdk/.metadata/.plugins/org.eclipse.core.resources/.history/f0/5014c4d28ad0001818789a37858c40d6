@@ -1,0 +1,21 @@
+
+/*
+ * GPIO_Test.c: simple test application
+ *
+ */
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h" //this is not needed unless using UART
+#include "xgpio.h"
+#include "xparameters.h"
+
+int main()
+{
+    init_platform();
+
+    print("Hello World\n\r");
+
+    cleanup_platform();
+    return 0;
+}

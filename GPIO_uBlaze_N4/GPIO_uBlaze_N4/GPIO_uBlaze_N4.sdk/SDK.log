@@ -4,3 +4,121 @@
 15:42:08 INFO  : Successfully done setting XSCT server connection channel  
 15:42:08 INFO  : Processing command line option -hwspec C:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.sdk/uBlaze_wrapper.hdf.
 15:42:08 INFO  : Successfully done setting SDK workspace  
+15:52:20 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Jerome\Desktop\Programming_Learning\FPGA\SoC\Projects\GPIO_uBlaze_N4\GPIO_uBlaze_N4\GPIO_uBlaze_N4\GPIO_uBlaze_N4.sdk\temp_xsdb_launch_script.tcl
+15:52:22 INFO  : XSCT server has started successfully.
+15:52:24 INFO  : Successfully done setting XSCT server connection channel  
+15:52:24 INFO  : Successfully done setting SDK workspace  
+15:52:25 INFO  : Registering command handlers for SDK TCF services
+15:52:26 INFO  : Processing command line option -hwspec C:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.sdk/uBlaze_wrapper.hdf.
+15:52:26 INFO  : Checking for hwspec changes in the project uBlaze_wrapper_hw_platform_0.
+16:07:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:07:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292742297A" && level==0} -index 0' command is executed.
+16:07:30 INFO  : FPGA configured successfully with bitstream "C:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.sdk/uBlaze_wrapper_hw_platform_0/download.bit"
+16:07:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292742297A" && level==0} -index 0' command is executed.
+16:07:36 INFO  : 'fpga -state' command is executed.
+16:07:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:07:37 INFO  : Jtag cable 'Digilent Nexys4DDR 210292742297A' is selected.
+16:07:37 INFO  : 'jtag frequency' command is executed.
+16:07:37 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:07:37 INFO  : Context for processor 'microblaze_0' is selected.
+16:07:37 INFO  : Processor reset is completed for 'microblaze_0'.
+16:07:37 INFO  : Context for processor 'microblaze_0' is selected.
+16:07:37 INFO  : The application 'C:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.sdk/GPIO_Interface/Debug/GPIO_Interface.elf' is downloaded to processor 'microblaze_0'.
+16:07:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292742297A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292742297A"} -index 0
+dow C:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.sdk/GPIO_Interface/Debug/GPIO_Interface.elf
+----------------End of Script----------------
+
+16:07:37 INFO  : Context for processor 'microblaze_0' is selected.
+16:07:37 INFO  : 'con' command is executed.
+16:07:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292742297A"} -index 0
+con
+----------------End of Script----------------
+
+16:07:37 INFO  : Disconnected from the channel tcfchan#1.
+16:08:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292742297A" && level==0} -index 0' command is executed.
+16:08:03 INFO  : 'fpga -state' command is executed.
+16:08:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:08:03 INFO  : Jtag cable 'Digilent Nexys4DDR 210292742297A' is selected.
+16:08:03 INFO  : 'jtag frequency' command is executed.
+16:08:03 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:08:04 INFO  : Context for processor 'microblaze_0' is selected.
+16:08:04 INFO  : Processor reset is completed for 'microblaze_0'.
+16:08:04 INFO  : Context for processor 'microblaze_0' is selected.
+16:08:04 INFO  : The application 'C:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.sdk/GPIO_Interface/Debug/GPIO_Interface.elf' is downloaded to processor 'microblaze_0'.
+16:08:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292742297A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292742297A"} -index 0
+dow C:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.sdk/GPIO_Interface/Debug/GPIO_Interface.elf
+----------------End of Script----------------
+
+16:08:04 INFO  : Context for processor 'microblaze_0' is selected.
+16:08:04 INFO  : 'con' command is executed.
+16:08:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292742297A"} -index 0
+con
+----------------End of Script----------------
+
+16:08:04 INFO  : Disconnected from the channel tcfchan#2.
+16:08:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292742297A" && level==0} -index 0' command is executed.
+16:08:54 INFO  : 'fpga -state' command is executed.
+16:08:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:08:55 INFO  : Jtag cable 'Digilent Nexys4DDR 210292742297A' is selected.
+16:08:55 INFO  : 'jtag frequency' command is executed.
+16:08:55 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:08:55 INFO  : Context for processor 'microblaze_0' is selected.
+16:08:55 INFO  : Processor reset is completed for 'microblaze_0'.
+16:08:55 INFO  : Context for processor 'microblaze_0' is selected.
+16:08:55 INFO  : The application 'C:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.sdk/GPIO_Interface/Debug/GPIO_Interface.elf' is downloaded to processor 'microblaze_0'.
+16:08:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292742297A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292742297A"} -index 0
+dow C:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.sdk/GPIO_Interface/Debug/GPIO_Interface.elf
+----------------End of Script----------------
+
+16:08:55 INFO  : Context for processor 'microblaze_0' is selected.
+16:08:55 INFO  : 'con' command is executed.
+16:08:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292742297A"} -index 0
+con
+----------------End of Script----------------
+
+16:08:55 INFO  : Disconnected from the channel tcfchan#3.
+16:13:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292742297A" && level==0} -index 0' command is executed.
+16:13:48 INFO  : 'fpga -state' command is executed.
+16:13:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:13:48 INFO  : Jtag cable 'Digilent Nexys4DDR 210292742297A' is selected.
+16:13:48 INFO  : 'jtag frequency' command is executed.
+16:13:48 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+16:13:49 INFO  : Context for processor 'microblaze_0' is selected.
+16:13:49 INFO  : Processor reset is completed for 'microblaze_0'.
+16:13:49 INFO  : Context for processor 'microblaze_0' is selected.
+16:13:49 INFO  : The application 'C:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.sdk/GPIO_Interface/Debug/GPIO_Interface.elf' is downloaded to processor 'microblaze_0'.
+16:13:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292742297A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292742297A"} -index 0
+dow C:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.sdk/GPIO_Interface/Debug/GPIO_Interface.elf
+----------------End of Script----------------
+
+16:13:50 INFO  : Context for processor 'microblaze_0' is selected.
+16:13:50 INFO  : 'con' command is executed.
+16:13:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292742297A"} -index 0
+con
+----------------End of Script----------------
+
+16:13:50 INFO  : Disconnected from the channel tcfchan#4.
