@@ -50,7 +50,7 @@ This is the stepping stone for developing more complexed SoC based systems.
 
 - The previous project to create a MicroBlaze processor with a UART core is found [here](https://github.com/JSCBLOG/Microblaze_Hello_World)
 - To change the buad rate, this can be done by clicking on the on the USB UART ip core in the block design.
-
+- Link to Writing Basic Software Application [here](https://github.com/JSCBLOG/MicroBlaze_GPIO/blob/master/Writing%20Basic%20Software%20Application.pdf)
 ## Issues and Bugs
 
 **MicroBlaze held in reset:**<br/>
