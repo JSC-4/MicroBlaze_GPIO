@@ -35,7 +35,7 @@ This is the stepping stone for developing more complexed SoC based systems.
 3. Go to the helloworld.c (can change the name to something more appropriate) file from the application project 
    folder, in the src folder. To read GPIO three steps need to be done. 1) Initialise the GPIO, 2) Set data direction,
    3) Read data. Various online documents can describe this in detail, such as Xilinx's Writing Basic Software
-   Application.
+   Application (see additional comments below).
 4. Once this is done click program FPGA, then after right click the application project folder then run as->launch on 
    hardware (GDB). If using the UART terminal see this step the below.
 5. Set up a serial terminal with the settings:
