@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Mon Oct 15 15:26:21 2018
+# Process ID: 2972
+# Current directory: C:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.runs/uBlaze_dlmb_v10_0_synth_1
+# Command line: vivado.exe -log uBlaze_dlmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uBlaze_dlmb_v10_0.tcl
+# Log file: C:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.runs/uBlaze_dlmb_v10_0_synth_1/uBlaze_dlmb_v10_0.vds
+# Journal file: C:/Users/Jerome/Desktop/Programming_Learning/FPGA/SoC/Projects/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4/GPIO_uBlaze_N4.runs/uBlaze_dlmb_v10_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Users/Jerome/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source uBlaze_dlmb_v10_0.tcl -notrace
+WARNING: [Board 49-91] Board repository path '{<C:UsersJeromeDesktopivado-boards-master>/vivado-boards/new/board_files}' does not exist, it will not be used to search board files.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP uBlaze_dlmb_v10_0, cache-ID = e6bf2c392d6d4361.
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 15 15:26:33 2018...
