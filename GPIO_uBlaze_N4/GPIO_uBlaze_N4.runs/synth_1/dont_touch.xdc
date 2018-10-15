@@ -40,7 +40,13 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==uBlaze_lmb_bram
 # IP: bd/uBlaze/ip/uBlaze_xbar_0/uBlaze_xbar_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==uBlaze_xbar_0 || ORIG_REF_NAME==uBlaze_xbar_0} -quiet] -quiet
 
-# IP: bd/uBlaze/ip/uBlaze_axi_gpio_0_1/uBlaze_axi_gpio_0_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==uBlaze_axi_gpio_0_1 || ORIG_REF_NAME==uBlaze_axi_gpio_0_1} -quiet] -quiet
+# IP: bd/uBlaze/ip/uBlaze_axi_gpio_0_0/uBlaze_axi_gpio_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==uBlaze_axi_gpio_0_0 || ORIG_REF_NAME==uBlaze_axi_gpio_0_0} -quiet] -quiet
+
+# IP: bd/uBlaze/ip/uBlaze_axi_gpio_1_1/uBlaze_axi_gpio_1_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==uBlaze_axi_gpio_1_1 || ORIG_REF_NAME==uBlaze_axi_gpio_1_1} -quiet] -quiet
+
+# IP: bd/uBlaze/ip/uBlaze_PmodACL2_0_0/uBlaze_PmodACL2_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==uBlaze_PmodACL2_0_0 || ORIG_REF_NAME==uBlaze_PmodACL2_0_0} -quiet] -quiet
 
 # XDC: bd/uBlaze/uBlaze_ooc.xdc

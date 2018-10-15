@@ -47,16 +47,37 @@
 
 #include <stdio.h>
 #include "platform.h"
-#include "xil_printf.h"
+#include "xgpio.h" //added this
+#include "xparameters.h" //add this
+#include "sleep.h" //added this
 
+#include "xil_printf.h" //this is not needed
 
 int main()
 {
+	XGpio	input, output;
+	//int switch_data = 0;
+
+	XGpio_Initialize(&input, XPAR_AXI_GPIO_0_DEVICE_ID);
+	XGpio_Initialize(&output, XPAR_AXI_GPIO_1_DEVICE_ID);
+
+	XGpio_SetDataDirection(&input, 1, 0xFFFF);
+	XGpio_SetDataDirection(&output, 1, 0x0000);
+
     init_platform();
 
     while(1)
     {
-    	print("Hello World\n\r");
+    	//switch_data = XGpio_DiscreteRead(&input, 1);
+
+    	for(int counter = 0; counter <= 65536;counter++)
+    	{
+    		if (XGpio_DiscreteRead(&input, 1) == 0x0001)
+    			counter = 0;
+    		else
+    			XGpio_DiscreteWrite(&output, 1, counter);
+    		sleep(1);
+    	}
     }
 
     cleanup_platform();

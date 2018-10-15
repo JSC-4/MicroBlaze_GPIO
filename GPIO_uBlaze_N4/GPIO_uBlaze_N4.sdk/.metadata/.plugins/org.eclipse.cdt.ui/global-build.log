@@ -217,3 +217,360 @@ mb-size GPIO.elf  |tee "GPIO.elf.size"
    2340	    268	   3112	   5720	   1658	GPIO.elf
 Finished building: GPIO.elf.size
  
+17:26:40 **** Auto Build of configuration Debug for project GPIO ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../GPIO_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: GPIO.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO.elf  |tee "GPIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2340	    268	   3112	   5720	   1658	GPIO.elf
+Finished building: GPIO.elf.size
+ 
+17:30:31 **** Auto Build of configuration Debug for project GPIO ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../GPIO_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:62:26: error: expected expression before ')' token
+  XGpio_Initialize(&input,);
+                          ^
+../src/helloworld.c:60:6: warning: unused variable 'switch_data' [-Wunused-variable]
+  int switch_data = 0;
+      ^~~~~~~~~~~
+../src/helloworld.c:59:6: warning: unused variable 'button_data' [-Wunused-variable]
+  int button_data = 0;
+      ^~~~~~~~~~~
+../src/helloworld.c:58:15: warning: unused variable 'output' [-Wunused-variable]
+  XGpio input, output;
+               ^~~~~~
+make: *** [src/helloworld.o] Error 1
+17:31:19 **** Auto Build of configuration Debug for project GPIO ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../GPIO_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:60:6: warning: unused variable 'switch_data' [-Wunused-variable]
+  int switch_data = 0;
+      ^~~~~~~~~~~
+../src/helloworld.c:59:6: warning: unused variable 'button_data' [-Wunused-variable]
+  int button_data = 0;
+      ^~~~~~~~~~~
+../src/helloworld.c:58:15: warning: unused variable 'output' [-Wunused-variable]
+  XGpio input, output;
+               ^~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: GPIO.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO.elf  |tee "GPIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2740	    288	   3116	   6144	   1800	GPIO.elf
+Finished building: GPIO.elf.size
+ 
+17:56:19 **** Auto Build of configuration Debug for project GPIO ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../GPIO_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:60:6: warning: unused variable 'switch_data' [-Wunused-variable]
+  int switch_data = 0;
+      ^~~~~~~~~~~
+../src/helloworld.c:59:6: warning: unused variable 'button_data' [-Wunused-variable]
+  int button_data = 0;
+      ^~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: GPIO.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO.elf  |tee "GPIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2816	    304	   3112	   6232	   1858	GPIO.elf
+Finished building: GPIO.elf.size
+ 
+17:57:19 **** Auto Build of configuration Debug for project GPIO ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../GPIO_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:60:6: warning: unused variable 'switch_data' [-Wunused-variable]
+  int switch_data = 0;
+      ^~~~~~~~~~~
+../src/helloworld.c:59:6: warning: unused variable 'button_data' [-Wunused-variable]
+  int button_data = 0;
+      ^~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: GPIO.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO.elf  |tee "GPIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3088	    304	   3112	   6504	   1968	GPIO.elf
+Finished building: GPIO.elf.size
+ 
+17:57:51 **** Auto Build of configuration Debug for project GPIO ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../GPIO_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:60:6: warning: unused variable 'switch_data' [-Wunused-variable]
+  int switch_data = 0;
+      ^~~~~~~~~~~
+../src/helloworld.c:59:6: warning: unused variable 'button_data' [-Wunused-variable]
+  int button_data = 0;
+      ^~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: GPIO.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO.elf  |tee "GPIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3116	    304	   3116	   6536	   1988	GPIO.elf
+Finished building: GPIO.elf.size
+ 
+17:59:36 **** Auto Build of configuration Debug for project GPIO ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../GPIO_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: GPIO.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO.elf  |tee "GPIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3500	    304	   3116	   6920	   1b08	GPIO.elf
+Finished building: GPIO.elf.size
+ 
+18:00:57 **** Incremental Build of configuration Debug for project GPIO ****
+make all 
+make: Nothing to be done for `all'.
+18:05:28 **** Auto Build of configuration Debug for project GPIO ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../GPIO_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: GPIO.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO.elf  |tee "GPIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3236	    304	   3116	   6656	   1a00	GPIO.elf
+Finished building: GPIO.elf.size
+ 
+18:05:38 **** Auto Build of configuration Debug for project GPIO ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../GPIO_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: GPIO.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO.elf  |tee "GPIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3232	    304	   3112	   6648	   19f8	GPIO.elf
+Finished building: GPIO.elf.size
+ 
+18:05:45 **** Auto Build of configuration Debug for project GPIO ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../GPIO_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: GPIO.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO.elf  |tee "GPIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3232	    304	   3112	   6648	   19f8	GPIO.elf
+Finished building: GPIO.elf.size
+ 
+18:05:50 **** Incremental Build of configuration Debug for project GPIO ****
+make all 
+make: Nothing to be done for `all'.
+18:06:34 **** Auto Build of configuration Debug for project GPIO ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../GPIO_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:24: error: expected expression before ';' token
+      for(int counter = ; counter <= 65536;counter++)
+                        ^
+make: *** [src/helloworld.o] Error 1
+18:06:40 **** Auto Build of configuration Debug for project GPIO ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../GPIO_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: GPIO.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO.elf  |tee "GPIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3236	    304	   3116	   6656	   1a00	GPIO.elf
+Finished building: GPIO.elf.size
+ 
+18:06:47 **** Incremental Build of configuration Debug for project GPIO ****
+make all 
+make: Nothing to be done for `all'.
+18:07:06 **** Auto Build of configuration Debug for project GPIO ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../GPIO_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: GPIO.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO.elf  |tee "GPIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3328	    304	   3112	   6744	   1a58	GPIO.elf
+Finished building: GPIO.elf.size
+ 
+18:07:17 **** Incremental Build of configuration Debug for project GPIO ****
+make all 
+make: Nothing to be done for `all'.
+18:11:22 **** Auto Build of configuration Debug for project GPIO ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../GPIO_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: GPIO.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO.elf  |tee "GPIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3640	    304	   3112	   7056	   1b90	GPIO.elf
+Finished building: GPIO.elf.size
+ 
+18:11:29 **** Incremental Build of configuration Debug for project GPIO ****
+make all 
+make: Nothing to be done for `all'.
+18:12:52 **** Incremental Build of configuration Debug for project GPIO ****
+make all 
+make: Nothing to be done for `all'.
+18:13:34 **** Incremental Build of configuration Debug for project GPIO ****
+make all 
+make: Nothing to be done for `all'.
+21:24:47 **** Auto Build of project GPIO_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodACL2_v1_0/src"
+C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/PmodACL2_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/PmodACL2_v1_0/src"
+C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/PmodACL2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodACL2..."
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+C:/Xilinx/SDK/2018.2/gnuwin/bin/make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+21:24:58 **** Auto Build of configuration Debug for project GPIO ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../GPIO_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../GPIO_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: GPIO.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../GPIO_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "GPIO.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: GPIO.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size GPIO.elf  |tee "GPIO.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3640	    304	   3112	   7056	   1b90	GPIO.elf
+Finished building: GPIO.elf.size
+ 

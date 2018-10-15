@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date         : Sun Oct 14 10:32:31 2018
+| Date         : Sun Oct 14 21:16:08 2018
 | Host         : DESKTOP-19INJQ0 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file uBlaze_wrapper_utilization_synth.rpt -pb uBlaze_wrapper_utilization_synth.pb
 | Design       : uBlaze_wrapper
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   35 |     0 |       210 | 16.67 |
+| Bonded IOB                  |   43 |     0 |       210 | 20.48 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         6 |  0.00 |
 | PHASER_REF                  |    0 |     0 |         6 |  0.00 |
@@ -146,8 +146,8 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| IBUF     |   34 |                  IO |
-| OBUFT    |   16 |                  IO |
+| IBUF     |   42 |                  IO |
+| OBUFT    |   24 |                  IO |
 | OBUF     |    1 |                  IO |
 +----------+------+---------------------+
 
@@ -169,7 +169,9 @@ Table of Contents
 | uBlaze_dlmb_bram_if_cntlr_0 |    1 |
 | uBlaze_clk_wiz_0_0          |    1 |
 | uBlaze_axi_uartlite_0_0     |    1 |
-| uBlaze_axi_gpio_0_1         |    1 |
+| uBlaze_axi_gpio_1_1         |    1 |
+| uBlaze_axi_gpio_0_0         |    1 |
+| uBlaze_PmodACL2_0_0         |    1 |
 +-----------------------------+------+
 
 
