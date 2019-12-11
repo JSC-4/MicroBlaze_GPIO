@@ -1,7 +1,6 @@
 # MicroBlaze GPIO with Nexys-4 DDR
 
-This project is about using the Nexys-4 DDR, to create a MicroBlaze SoC and communicating with the UART to print "Hello World". 
-This is the stepping stone for developing more complexed SoC based systems.
+This project is about using the Nexys-4 DDR, to create a MicroBlaze SoC and controlling the GPIO.This is the stepping stone for developing more complexed SoC based systems.
 
 ### Prerequisites
 
